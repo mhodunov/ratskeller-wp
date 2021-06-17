@@ -2,10 +2,14 @@
   "name": "ratskeller-wp",
   "version": "1.0.0",
   "description": "Developing Wordpress Theme",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --config webpack.config.js",
+    "start": "webpack --mode development --config webpack.config.js --watch --colors"
   },
   "repository": {
     "type": "git",
