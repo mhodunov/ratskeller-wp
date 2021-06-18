@@ -11,20 +11,25 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ratskeller-wp' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ratskeller-wp' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ratskeller-wp' ), 'ratskeller-wp', '<a href="https://4eck-media.de">4eck-media</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer fw-container">
+		<h2 class="section-title">Kontakt & Anfahrt</h2>
+		<div class="footer__content">
+		<ul class="footer__contacts-container">
+			<li><span class="map-icon"></span><?php echo fw_get_db_settings_option('address') ?></li>
+			<li><span class="email-icon"></span><a href="mailto:<?php echo fw_get_db_settings_option('mail') ?>"></a><?php echo fw_get_db_settings_option('mail') ?></li>
+			<li><span class="user-icon"></span><?php echo fw_get_db_settings_option('facebook_person') ?></li>
+			<li><span class="phone-icon"></span><a href="tel:<?php echo fw_get_db_settings_option('phone') ?>"></a><?php echo fw_get_db_settings_option('phone') ?></li>
+			<li><span class="fb-icon"></span><a href="<?php echo fw_get_db_settings_option('facebook') ?>">Ratskeller auf Facebook</a></li>
+		</ul>
+		<div class="footer__map">
+
+		</div>
+		<div class="footer__text">
+			<img src="" alt="" class="footer__bird">
+			<p><strong>Anfahrtshinweise für unsere Appartement-Gäste</strong></p>
+			<p>Nutzen Sie bitte den Parkplatz mit der Adresse XYZ, Waren (Müritz)</p>
+		</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
