@@ -36,5 +36,10 @@ $options = array(
 		'label' => __( 'Section Image', 'Page Builder' ),
 		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
 	),
+	'rotated_text' => array(
+		'label' => __('Additional Text', 'Page Builder'),
+		'desc'  => __('Insert Text Here', 'Page Builder'),
+		'type'  => 'text',
+	),
 
 );

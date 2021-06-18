@@ -2,33 +2,29 @@
 	die( 'Forbidden' );
 }
 
-$bg_color = '';
-if ( ! empty( $atts['background_color'] ) ) {
-	$bg_color = 'background-color:' . $atts['background_color'] . ';';
-}
-
-$bg_image = '';
-if ( ! empty( $atts['background_image'] ) && ! empty( $atts['background_image']['data']['icon'] ) ) {
-	$bg_image = 'background-image:url(' . $atts['background_image']['data']['icon'] . ');';
-}
-
-$bg_video_data_attr    = '';
-$section_extra_classes = '';
-if ( ! empty( $atts['video'] ) ) {
-	$filetype           = wp_check_filetype( $atts['video'] );
-	$filetypes          = array( 'mp4' => 'mp4', 'ogv' => 'ogg', 'webm' => 'webm', 'jpg' => 'poster' );
-	$filetype           = array_key_exists( (string) $filetype['ext'], $filetypes ) ? $filetypes[ $filetype['ext'] ] : 'video';
-	$data_name_attr = version_compare( fw_ext('shortcodes')->manifest->get_version(), '1.3.9', '>=' ) ? 'data-background-options' : 'data-wallpaper-options';
-	$bg_video_data_attr = $data_name_attr.'="' . fw_htmlspecialchars( json_encode( array( 'source' => array( $filetype => $atts['video'] ) ) ) ) . '"';
-	$section_extra_classes .= ' background-video';
-}
-
-$section_style   = ( $bg_color || $bg_image ) ? 'style="' . esc_attr($bg_color . $bg_image) . '"' : '';
-$container_class = ( isset( $atts['is_fullwidth'] ) && $atts['is_fullwidth'] ) ? 'fw-container-fluid' : 'fw-container';
-$customclass = ( isset( $atts['customclass'] ) && $atts['customclass'] ) ? ' ' . $atts['customclass'] . '' : '';
+$section_title = $atts['section_title'];
+$section_content = $atts['section_content'];
+$section_additional_text = $atts['section_additional_text'];
+$image_one = $atts['image_one'];
+$image_two = $atts['image_two'];
+$image_three = $atts['image_three'];
 ?>
-<section class="fw-main-row <?php echo $customclass; ?>" <?php echo $section_style; ?> <?php echo $bg_video_data_attr; ?>>
-	<div class="<?php echo esc_attr($container_class); ?>">
-		<?php echo do_shortcode( $content ); ?>
-	</div>
+
+<section class="section-beer">
+<div class="section-beer__first-row">
+	<div class="section-beer__image-one">	<?php if (!empty($image_one)) {
+                echo wp_get_attachment_image($image_one['attachment_id'], 'large-extra');
+            } ?></div>
+	<div class="section-beer__image-one">	<?php if (!empty($image_two)) {
+                echo wp_get_attachment_image($image_two['attachment_id'], 'large-extra');
+            } ?></div>
+	<div class="section-beer__image-one">	<?php if (!empty($image_three)) {
+                echo wp_get_attachment_image($image_three['attachment_id'], 'large-extra');
+            } ?></div>
+</div>
+<div class="section-beer__second-row">
+	<h2 class="section-title"><?php echo $section_title ?></h2>
+	<div class="section-text"><?php echo $section_content ?></div>
+	<div class="section-additional-text"><?php echo $section_additional_text ?></div>
+</div>
 </section>
