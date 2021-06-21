@@ -1,0 +1,34 @@
+.section-beer {
+  background: no-repeat center
+    url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-size: cover;
+
+  padding-top: 60px;
+  padding-bottom: 170px;
+
+  &__text {
+    max-width: 475px;
+    margin-left: auto;
+  }
+
+  &__additional-text {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.7;
+
+    font-size: $mainTextSize;
+    color: $primaryColor;
+
+    max-width: 765px;
+    margin-top: 85px;
+    margin-bottom: 0;
+
+    margin-left: auto;
+  }
+}
+
+.section-text > ul {
+  margin: 0;
+  padding-left: 20px;
+}

@@ -141,7 +141,7 @@ add_action( 'widgets_init', 'ratskeller_wp_widgets_init' );
  */
 function ratskeller_wp_scripts() {
 	wp_enqueue_style( 'ratskeller-wp-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'ratskeller-wp-custom-style', get_template_directory_uri() . '/css/custom-style.css' );
+	wp_enqueue_style( 'ratskeller-wp-custom-style', get_template_directory_uri() . '/scss/main.css' );
 	wp_enqueue_style( 'ratskeller-wp-media', get_template_directory_uri() . '/css/media.css' );
 	wp_style_add_data( 'ratskeller-wp-style', 'rtl', 'replace' );
 

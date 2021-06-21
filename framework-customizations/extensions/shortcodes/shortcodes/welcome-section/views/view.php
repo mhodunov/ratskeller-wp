@@ -11,15 +11,13 @@ $image = $atts['image'];
 ?>
 
 <section class="section-welcome">
-<div class="section-welcome__first-row">
-	<h2 class="section-title"><?php echo $section_title ?></h2>
-	<div class="section-text"><?php echo $section_content ?></div>
-	<a href="<?php echo $button_url ?>" class="primary-button"><?php echo $button_text ?></a>
-</div>
-<div class="section-welcome__second-row">
-	<img src="" alt="" class="section-welcome__bird">
-	<img src="<?php echo $image['url'] ?>" alt="<?php echo $section_title ?>" class="section-welcome__image">
-	<span class="section-welcome__decorative-block"></span>
-	<p class="section-welcome__rotated-text"><?php echo $rotated_text ?></p>
-</div>
+	<div class="section-welcome__text-row">
+		<h2 class="section-title"><?php echo $section_title ?></h2>
+		<div class="section-text"><?php echo $section_content ?></div>
+		<a href="<?php echo $button_url ?>" class="primary-button"><?php echo $button_text ?></a>
+	</div>
+		<img src="/wp-content/themes/ratskeller-wp/img/Bierglas.png" alt="ratskeller beer bird" class="section-welcome__bird">
+		<img src="<?php echo $image['url'] ?>" alt="<?php echo $section_title ?>" class="section-welcome__image">
+		<p class="section-welcome__rotated-text"><?php echo $rotated_text ?></p>
+		<span class="section-welcome__decorative-block"></span>
 </section>

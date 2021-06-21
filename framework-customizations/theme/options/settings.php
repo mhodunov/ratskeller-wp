@@ -45,10 +45,16 @@ $options = array(
         'value' => '#'
       ),
       
-      'open_hours' => array(
-        'label' => __('Opening hours (info in footer)', 'Options'),
+      'open_hours_from' => array(
+        'label' => __('Opening hours (from)', 'Options'),
         'type' => 'text',
-        'value' => 'Täglich für Sie geöffnet von 7 bis 22 Uhr'
+        'value' => '7'
+      ),
+
+      'open_hours_to' => array(
+        'label' => __('Opening hours (to)', 'Options'),
+        'type' => 'text',
+        'value' => '22'
       ),
     )
     ),

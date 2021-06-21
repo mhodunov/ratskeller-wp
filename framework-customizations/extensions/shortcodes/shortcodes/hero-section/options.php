@@ -4,9 +4,15 @@
 
 $options = array(
 
-	'image' => array(
+	'background_image' => array(
 		'type'  => 'upload',
 		'label' => __( 'Hero Image', 'Page Builder' ),
+		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
+	),
+
+	'logo' => array(
+		'type'  => 'upload',
+		'label' => __( 'Logo', 'Page Builder' ),
 		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
 	),
 

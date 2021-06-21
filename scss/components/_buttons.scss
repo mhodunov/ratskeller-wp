@@ -1,0 +1,13 @@
+.primary-button {
+  @extend %Button;
+
+  border-color: $accentColor;
+  color: $accentColor;
+}
+
+.secondary-button {
+  @extend %Button;
+
+  border-color: $secondaryColor;
+  color: $secondaryColor;
+}

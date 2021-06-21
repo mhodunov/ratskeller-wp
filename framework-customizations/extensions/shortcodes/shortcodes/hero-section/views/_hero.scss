@@ -1,0 +1,63 @@
+.section-hero {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &__logo {
+    max-width: 330px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__image {
+    width: 1510px;
+    height: 720px;
+    position: relative;
+    background: red;
+  }
+
+  &__blue-block {
+    width: 530px;
+    height: 720px;
+
+    position: absolute;
+
+    right: 15px;
+    top: 0;
+
+    z-index: 0;
+
+    background: $accentColor;
+  }
+
+  &__texture-block {
+  }
+
+  &__text {
+    width: 530px;
+    background: $accentColor;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: auto;
+
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+
+    &--small {
+      display: block;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    &--large {
+      display: block;
+      text-align: center;
+      font-size: 59px;
+    }
+  }
+}

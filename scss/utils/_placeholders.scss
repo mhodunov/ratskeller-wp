@@ -1,0 +1,24 @@
+%Button {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $buttonTextSize;
+  line-height: 1.32;
+  text-decoration: none;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 50px;
+
+  max-width: 335px;
+  text-align: center;
+
+  display: block;
+  border: 2px solid;
+}
+
+%HoverAnimation {
+}
+
+%LogoStyle {
+}

@@ -1,0 +1,79 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: $mainTextSize;
+  color: $primaryColor;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-family: "Bouffant", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125;
+
+  font-size: $sectionHeaderSize;
+  color: $primaryColor;
+
+  margin: 0;
+  padding: 0;
+}
+
+.section-text {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0px;
+
+  font-size: $mainTextSize;
+  color: $primaryColor;
+
+  margin-top: 5px;
+  padding: 0;
+}
+
+.white-text {
+  color: $secondaryColor;
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .fw-container {
+    max-width: 540px !important;
+  }
+}
+
+/* Medium devices (phones) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .fw-container {
+    max-width: 720px !important;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .fw-container {
+    max-width: 960px !important;
+  }
+}
+
+/* Medium devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .fw-container {
+    max-width: 1140px !important;
+  }
+}
+
+/* Large devices (large desktops) */
+@media (min-width: 1201px) {
+  .fw-container {
+    max-width: 1680px !important;
+  }
+}

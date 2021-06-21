@@ -11,7 +11,6 @@ $image_three = $atts['image_three'];
 ?>
 
 <section class="section-beer">
-<div class="section-beer__first-row">
 	<div class="section-beer__image-one">	<?php if (!empty($image_one)) {
                 echo wp_get_attachment_image($image_one['attachment_id'], 'large-extra');
             } ?></div>
@@ -21,10 +20,9 @@ $image_three = $atts['image_three'];
 	<div class="section-beer__image-one">	<?php if (!empty($image_three)) {
                 echo wp_get_attachment_image($image_three['attachment_id'], 'large-extra');
             } ?></div>
-</div>
-<div class="section-beer__second-row">
-	<h2 class="section-title"><?php echo $section_title ?></h2>
-	<div class="section-text"><?php echo $section_content ?></div>
-	<div class="section-additional-text"><?php echo $section_additional_text ?></div>
-</div>
+	<div class="section-beer__text">
+		<h2 class="section-title"><?php echo $section_title ?></h2>
+		<div class="section-text"><?php echo $section_content ?></div>
+	</div>
+	<div class="section-beer__additional-text"><?php echo $section_additional_text ?></div>
 </section>
