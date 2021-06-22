@@ -97,6 +97,16 @@ footer > .section-title {
 
   display: inline-block;
 
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    @extend %HoverAnimation;
+    color: #fff;
+
+    border-bottom: 2px solid #fff;
+  }
+
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -113,4 +123,19 @@ footer > .section-title {
 
 .footer-hour {
   font-size: 40px;
+}
+
+.footer__contacts-item a {
+  text-decoration: none;
+  color: $primaryColor;
+
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    @extend %HoverAnimation;
+
+    color: $accentColor;
+    border-bottom: 2px solid $accentColor;
+  }
 }

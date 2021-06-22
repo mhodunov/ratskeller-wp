@@ -23,6 +23,15 @@
   font-size: 20px;
   text-decoration: none;
   color: $primaryColor;
+
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+
+    @extend %HoverAnimation;
+  }
 }
 
 #primary-menu > li {
@@ -41,8 +50,18 @@
   text-decoration: none;
   color: $secondaryColor;
 
+  @extend %HoverAnimation;
+
   &:first-child {
-    padding-right: 30px;
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+
+    @extend %HoverAnimation;
   }
 }
 

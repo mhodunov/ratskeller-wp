@@ -3,6 +3,15 @@
 
   border-color: $accentColor;
   color: $accentColor;
+
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $secondaryColor;
+    @extend %HoverAnimation;
+  }
 }
 
 .secondary-button {
@@ -10,4 +19,14 @@
 
   border-color: $secondaryColor;
   color: $secondaryColor;
+
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryColor;
+    color: $accentColor;
+
+    @extend %HoverAnimation;
+  }
 }

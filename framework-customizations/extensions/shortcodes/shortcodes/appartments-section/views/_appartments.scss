@@ -1,5 +1,10 @@
 .section-appartments {
-  background: $accentColor;
+  background-color: $accentColor;
+  background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"),
+    url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+  background-position: -255px -100px, 1400px center;
+  background-size: 40% 40%, 40% 40%;
+  background-repeat: no-repeat, no-repeat;
   position: relative;
 
   margin-top: 0;

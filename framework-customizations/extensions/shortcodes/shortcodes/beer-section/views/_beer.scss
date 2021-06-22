@@ -1,7 +1,10 @@
 .section-beer {
-  background: no-repeat center
+  background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"),
+    url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"),
     url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-size: cover;
+  background-size: 40% 40%, 40% 40%, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left top, 1500px center, center;
 
   position: relative;
   padding-top: 60px;
