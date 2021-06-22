@@ -1,0 +1,59 @@
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+
+  width: 1510px;
+}
+
+.site-branding {
+  width: 230px;
+}
+
+.main-navigation {
+  padding-left: 170px;
+}
+
+.main-navigation a {
+  font-size: 20px;
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+#primary-menu > li {
+  padding-right: 30px;
+}
+
+.header-contacts {
+  width: 500px;
+  text-align: right;
+  z-index: 1;
+}
+
+.header-contacts > a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $secondaryColor;
+
+  &:first-child {
+    padding-right: 30px;
+  }
+}
+
+.header-blue-block {
+  width: 530px;
+  height: 100%;
+  position: absolute;
+  background: $accentColor;
+
+  right: 15px;
+  top: 0;
+
+  z-index: 0;
+}

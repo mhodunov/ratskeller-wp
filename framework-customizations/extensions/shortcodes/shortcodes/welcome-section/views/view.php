@@ -18,6 +18,7 @@ $image = $atts['image'];
 	</div>
 		<img src="/wp-content/themes/ratskeller-wp/img/Bierglas.png" alt="ratskeller beer bird" class="section-welcome__bird">
 		<img src="<?php echo $image['url'] ?>" alt="<?php echo $section_title ?>" class="section-welcome__image">
-		<p class="section-welcome__rotated-text"><?php echo $rotated_text ?></p>
-		<span class="section-welcome__decorative-block"></span>
+		<div class="section-welcome__decorative-block">
+			<p class="rotated-text section-welcome__additional-text"><?php echo $rotated_text ?></p>
+		</div>
 </section>

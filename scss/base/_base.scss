@@ -39,6 +39,21 @@ p {
   padding: 0;
 }
 
+.rotated-text {
+  font-family: "Bouffant", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.12;
+
+  font-size: $rotatedTextSize;
+  color: $primaryColor;
+
+  margin: 0;
+  padding: 0;
+
+  transform: matrix(0.99, -0.14, 0.14, 0.99, 0, 0);
+}
+
 .white-text {
   color: $secondaryColor;
 }

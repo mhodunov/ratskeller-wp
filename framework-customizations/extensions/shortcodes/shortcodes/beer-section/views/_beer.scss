@@ -3,6 +3,7 @@
     url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
   background-size: cover;
 
+  position: relative;
   padding-top: 60px;
   padding-bottom: 170px;
 
@@ -26,9 +27,36 @@
 
     margin-left: auto;
   }
+
+  &__image-one {
+    position: absolute;
+    width: 390px;
+    bottom: 150px;
+    left: 0;
+  }
+
+  &__image-two {
+    position: absolute;
+    width: 390px;
+
+    left: 420px;
+    bottom: 150px;
+  }
+
+  &__image-three {
+    position: absolute;
+    width: 390px;
+
+    left: 700px;
+    bottom: 315px;
+  }
 }
 
 .section-text > ul {
   margin: 0;
   padding-left: 20px;
+}
+
+.section-beer ul {
+  margin-top: 50px;
 }

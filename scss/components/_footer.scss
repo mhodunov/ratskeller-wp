@@ -7,8 +7,11 @@ footer > .section-title {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 45px;
-    margin-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 90px;
+
+    background: no-repeat 500px 130px
+      url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
   }
 
   &__contacts-container {
@@ -31,6 +34,12 @@ footer > .section-title {
       margin-bottom: 43px;
     }
   }
+
+  &__map {
+    width: 740px;
+    height: 370px;
+  }
+
   &__icon {
     width: 39px;
     height: 39px;
@@ -42,7 +51,7 @@ footer > .section-title {
 
   &__text {
     padding-right: 20px;
-    max-width: 330px;
+    width: 350px;
     &--bold {
       margin: 0;
       padding: 0;
@@ -57,6 +66,7 @@ footer > .section-title {
 
 .footer__absolute {
   display: flex;
+  align-content: center;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -67,6 +77,7 @@ footer > .section-title {
   background-color: $accentColor;
 
   &-logo {
+    width: 230px;
   }
 
   &-nav {
@@ -96,7 +107,7 @@ footer > .section-title {
 
   position: absolute;
 
-  top: 0;
+  top: 30px;
   right: 0;
 }
 

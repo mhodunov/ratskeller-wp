@@ -1,5 +1,6 @@
 .section-appartments {
   background: $accentColor;
+  position: relative;
 
   margin-top: 0;
   margin-bottom: 85px;
@@ -9,5 +10,40 @@
   &__text-wrapper {
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  &__left-images {
+    position: absolute;
+    width: 390px;
+    left: 0;
+    bottom: -30px;
+  }
+
+  &__right-images {
+    position: absolute;
+    width: 390px;
+
+    right: 0;
+    bottom: 60px;
+  }
+}
+
+.section-appartments__image {
+  &-one {
+    margin: 0;
+  }
+
+  &-two {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  &-three {
+    margin: 0;
+  }
+
+  &-four {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }

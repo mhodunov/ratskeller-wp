@@ -13,10 +13,10 @@
   &__bird {
     position: absolute;
 
-    left: 740px;
+    left: 750px;
     bottom: 0;
 
-    height: 360px;
+    width: 360px;
 
     z-index: 10;
   }
@@ -24,10 +24,18 @@
   &__image {
     position: absolute;
 
-    top: 160px;
+    top: 150px;
     right: 70px;
 
-    width: 700px;
+    width: 765px;
+  }
+
+  &__additional-text {
+    width: 340px;
+    position: absolute;
+    bottom: 35px;
+    left: 45px;
+    color: $secondaryColor;
   }
 
   &__decorative-block {

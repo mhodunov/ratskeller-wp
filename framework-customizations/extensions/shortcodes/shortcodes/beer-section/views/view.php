@@ -14,11 +14,11 @@ $image_three = $atts['image_three'];
 	<div class="section-beer__image-one">	<?php if (!empty($image_one)) {
                 echo wp_get_attachment_image($image_one['attachment_id'], 'large-extra');
             } ?></div>
-	<div class="section-beer__image-one">	<?php if (!empty($image_two)) {
-                echo wp_get_attachment_image($image_two['attachment_id'], 'large-extra');
-            } ?></div>
-	<div class="section-beer__image-one">	<?php if (!empty($image_three)) {
+	<div class="section-beer__image-three">	<?php if (!empty($image_three)) {
                 echo wp_get_attachment_image($image_three['attachment_id'], 'large-extra');
+            } ?></div>
+	<div class="section-beer__image-two">	<?php if (!empty($image_two)) {
+                echo wp_get_attachment_image($image_two['attachment_id'], 'large-extra');
             } ?></div>
 	<div class="section-beer__text">
 		<h2 class="section-title"><?php echo $section_title ?></h2>
