@@ -59,7 +59,11 @@
 				?>
 			</nav>
 			<div class="header-contacts">
-				<a href="tel:<?php echo fw_get_db_settings_option('phone') ?>"><?php echo fw_get_db_settings_option('phone') ?></a><a href="#">Anfahrt</a>
+				<span><svg class="header-contacts__icon">
+					<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#phone-circle"></use>
+				</svg></span><a href="tel:<?php echo fw_get_db_settings_option('phone') ?>"><?php echo fw_get_db_settings_option('phone') ?></a><span><svg class="header-contacts__icon">
+					<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#location"></use>
+				</svg></span><a href="#">Anfahrt</a>
 			</div>
 			</div>
 			

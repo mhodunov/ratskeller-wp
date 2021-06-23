@@ -9,7 +9,9 @@ $logo = $atts['logo'];
 ?>
 
 <section class="section-hero">
-	<span class="section-hero__decoration"></span>
+	<span class="section-hero__decoration"><svg>
+		<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#arrow-circle"></use>
+	</svg></span>
 	<div class="section-hero__image" style="background-image: linear-gradient(180deg, #03457400 0%, #03395F58 55%, #034574AC 100%), url(<?php echo $bg_image['url'] ?>)">
 		<div class="section-hero__logo"><?php if (!empty($logo)) {
                 echo wp_get_attachment_image($logo['attachment_id'], 'large-extra');

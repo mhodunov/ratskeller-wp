@@ -79,34 +79,33 @@
   &__decoration {
     position: absolute;
     right: 45px;
-    bottom: 455px;
-    width: 50px;
-    height: 50px;
-    background-color: $secondaryColor;
-    border-radius: 50%;
-
+    bottom: 445px;
     z-index: 30;
-
+    & svg {
+      fill: $secondaryColor;
+      width: 50px;
+      height: 50px;
+    }
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: -33px;
+      bottom: 93px;
       right: 25px;
       height: 313px;
-      transform: translateY(-100%);
-      border-right: 1px solid $secondaryColor;
+      width: 1px;
+      background-color: $secondaryColor;
     }
 
     &::after {
       content: "";
       display: block;
       position: absolute;
-      top: 83px;
+      top: 85px;
       right: 25px;
       height: 395px;
-
-      border-right: 1px solid $secondaryColor;
+      width: 1px;
+      background-color: $secondaryColor;
     }
   }
 }

@@ -44,9 +44,15 @@ footer > .section-title {
     width: 39px;
     height: 39px;
     border-radius: 50%;
-    background: $accentColor;
-
+    position: relative;
     margin-right: 16px;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__text {
@@ -137,5 +143,60 @@ footer > .section-title {
 
     color: $accentColor;
     border-bottom: 2px solid $accentColor;
+  }
+}
+
+.map-icon {
+  width: 20px;
+  height: 25px;
+  fill: #fff;
+}
+
+.user-icon {
+  width: 39px;
+  height: 39px;
+  fill: $accentColor;
+}
+
+.facebook-icon {
+  width: 39px;
+  height: 39px;
+  fill: $accentColor;
+}
+
+.email-icon {
+  width: 39px;
+  height: 39px;
+  fill: $accentColor;
+}
+
+.phone-icon {
+  width: 39px;
+  height: 39px;
+  fill: $accentColor;
+}
+
+.icon-blue-bg {
+  background-color: $accentColor;
+}
+
+.footer-decoration {
+  height: 1px;
+  width: 670px;
+  background-color: $secondaryColor;
+  position: absolute;
+
+  top: 75px;
+  left: 570px;
+
+  &::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: $secondaryColor;
+    position: absolute;
+    left: -5px;
+    bottom: -4px;
   }
 }
