@@ -62,37 +62,38 @@ p {
   color: $secondaryColor;
 }
 
-/* Small devices (phones) */
-@media (max-width: 576px) {
-  .fw-container {
+@media screen and (max-width: 576px) {
+  .custom-container {
     max-width: 540px !important;
   }
 }
 
 /* Medium devices (phones) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .fw-container {
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .custom-container {
     max-width: 720px !important;
   }
 }
 
 /* Medium devices (tablets) */
-@media (min-width: 769px) and (max-width: 992px) {
-  .fw-container {
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .custom-container {
     max-width: 960px !important;
   }
 }
 
 /* Medium devices (desktops) */
-@media (min-width: 993px) and (max-width: 1200px) {
-  .fw-container {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .custom-container {
     max-width: 1140px !important;
   }
 }
 
 /* Large devices (large desktops) */
-@media (min-width: 1201px) {
-  .fw-container {
-    max-width: 1680px !important;
+@media screen and (min-width: 1650px) {
+  .custom-container {
+    max-width: 1650px !important;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

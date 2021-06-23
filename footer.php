@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer fw-container">
-	
+		<div class="footer__container custom-container">
 		<h2 class="section-title">Kontakt & Anfahrt</h2>
 		<div class="footer-decoration"></div>
 		<div class="footer__content">
@@ -55,7 +55,9 @@
 				<p class="footer__text--normal">Nutzen Sie bitte den Parkplatz mit der Adresse XYZ, Waren (Müritz)</p>
 			</div>
 			</div>
+			</div>
 		<div class="footer__absolute white-text">
+			<div class="custom-container">
 			<div class="footer__absolute-logo">
 					<img src="/wp-content/themes/ratskeller-wp/img/logo-text.png" alt="Ratskeller logo"></img>
 			</div>
@@ -64,6 +66,7 @@
 			<div class="footer__absolute-nav">
 				<a href="#" class="footer__link">Impressum</a>
 				<a href="#" class="footer__link">Datenschutz</a>
+			</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

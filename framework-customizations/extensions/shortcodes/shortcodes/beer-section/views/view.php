@@ -11,6 +11,7 @@ $image_three = $atts['image_three'];
 ?>
 
 <section class="section-beer">
+	<div class="custom-container section-beer__container">
 	<div class="section-beer__image-one">	<?php if (!empty($image_one)) {
                 echo wp_get_attachment_image($image_one['attachment_id'], 'large-extra');
             } ?></div>
@@ -26,4 +27,5 @@ $image_three = $atts['image_three'];
 	</div>
 	<div class="section-beer__additional-text"><?php echo $section_additional_text ?></div>
 	<div class="section-beer__decoration"></div>
+	</div>
 </section>

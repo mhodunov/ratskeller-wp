@@ -9,6 +9,8 @@ $logo = $atts['logo'];
 ?>
 
 <section class="section-hero">
+		<div class="section-hero__texture-block"></div>
+	<div class="custom-container section-hero-container">
 	<span class="section-hero__decoration"><svg>
 		<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#arrow-circle"></use>
 	</svg></span>
@@ -19,9 +21,10 @@ $logo = $atts['logo'];
 	</div>
 	</div>
 	<div class="section-hero__blue-block"></div>
-	<div class="section-hero__texture-block"></div>
+
 	<div class="section-hero__text">
 		<span class="section-hero__text--small white-text"><? echo $small_text ?></span>
 		<span class="section-hero__text--large white-text"><? echo $large_text ?></span>
 	</div>
+</div>
 </section>

@@ -13,7 +13,7 @@
 }
 
 .site-branding {
-  width: 230px;
+  min-width: 230px;
 }
 
 .main-navigation {
@@ -40,7 +40,7 @@
 }
 
 .header-contacts {
-  width: 620px;
+  width: 690px;
   text-align: right;
   z-index: 1;
 
@@ -78,7 +78,7 @@
   position: absolute;
   background: $accentColor;
 
-  right: 15px;
+  right: 0;
   top: 0;
 
   z-index: 0;

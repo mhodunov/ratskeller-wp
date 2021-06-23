@@ -13,6 +13,7 @@ $image_four = $atts['image_four'];
 ?>
 
 <section class="section-appartments">
+    <div class="section-appartments__container custom-container">
     <div class="section-appartments__left-images">
         <div class="section-appartments__image-one"><?php if (!empty($image_one)) {
                         echo wp_get_attachment_image($image_one['attachment_id'], 'large-extra');
@@ -35,4 +36,5 @@ $image_four = $atts['image_four'];
                     } ?></div>
     </div>
     <div class="section-appartments__decoration-line"></div>
+    </div>
 </section>

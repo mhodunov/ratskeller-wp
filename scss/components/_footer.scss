@@ -1,5 +1,16 @@
-footer > .section-title {
+footer .section-title {
   padding-left: 45px;
+}
+
+footer {
+  background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-repeat: no-repeat;
+  background-size: 1225px 615px;
+  background-position: 105% 190%;
+}
+
+.footer__container {
+  position: relative;
 }
 
 .footer {
@@ -9,9 +20,6 @@ footer > .section-title {
     align-items: flex-end;
     padding-top: 45px;
     padding-bottom: 90px;
-
-    background: no-repeat 500px 130px
-      url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
   }
 
   &__contacts-container {
@@ -71,15 +79,6 @@ footer > .section-title {
 }
 
 .footer__absolute {
-  display: flex;
-  align-content: center;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  justify-content: space-between;
-  align-items: center;
-
   background-color: $accentColor;
 
   &-logo {
@@ -199,4 +198,14 @@ footer > .section-title {
     left: -5px;
     bottom: -4px;
   }
+}
+
+.footer__absolute .custom-container {
+  display: flex;
+  align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  justify-content: space-between;
+  align-items: center;
 }

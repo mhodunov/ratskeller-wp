@@ -120,38 +120,39 @@ p {
   color: #f0ecdf;
 }
 
-/* Small devices (phones) */
-@media (max-width: 576px) {
-  .fw-container {
+@media screen and (max-width: 576px) {
+  .custom-container {
     max-width: 540px !important;
   }
 }
 
 /* Medium devices (phones) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .fw-container {
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .custom-container {
     max-width: 720px !important;
   }
 }
 
 /* Medium devices (tablets) */
-@media (min-width: 769px) and (max-width: 992px) {
-  .fw-container {
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .custom-container {
     max-width: 960px !important;
   }
 }
 
 /* Medium devices (desktops) */
-@media (min-width: 993px) and (max-width: 1200px) {
-  .fw-container {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .custom-container {
     max-width: 1140px !important;
   }
 }
 
 /* Large devices (large desktops) */
-@media (min-width: 1201px) {
-  .fw-container {
-    max-width: 1680px !important;
+@media screen and (min-width: 1650px) {
+  .custom-container {
+    max-width: 1650px !important;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -175,7 +176,7 @@ p {
 }
 
 .site-branding {
-  width: 230px;
+  min-width: 230px;
 }
 
 .main-navigation {
@@ -197,7 +198,7 @@ p {
 }
 
 .header-contacts {
-  width: 620px;
+  width: 690px;
   text-align: right;
   z-index: 1;
 }
@@ -230,13 +231,24 @@ p {
   height: 100%;
   position: absolute;
   background: #034574;
-  right: 15px;
+  right: 0;
   top: 0;
   z-index: 0;
 }
 
-footer > .section-title {
+footer .section-title {
   padding-left: 45px;
+}
+
+footer {
+  background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-repeat: no-repeat;
+  background-size: 1225px 615px;
+  background-position: 105% 190%;
+}
+
+.footer__container {
+  position: relative;
 }
 
 .footer__content {
@@ -251,7 +263,6 @@ footer > .section-title {
           align-items: flex-end;
   padding-top: 45px;
   padding-bottom: 90px;
-  background: no-repeat 500px 130px url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
 }
 
 .footer__contacts-container {
@@ -316,20 +327,6 @@ footer > .section-title {
 }
 
 .footer__absolute {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #034574;
 }
 
@@ -437,6 +434,22 @@ footer > .section-title {
   bottom: -4px;
 }
 
+.footer__absolute .custom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .primary-button {
   border-color: #034574;
   color: #034574;
@@ -455,6 +468,10 @@ footer > .section-title {
 .secondary-button:hover, .secondary-button:focus {
   background-color: #f0ecdf;
   color: #034574;
+}
+
+.section-hero-container {
+  position: relative;
 }
 
 .section-hero {
@@ -485,7 +502,7 @@ footer > .section-title {
   width: 530px;
   height: 720px;
   position: absolute;
-  right: 15px;
+  right: 0;
   top: 0;
   z-index: 0;
   background: #034574;
@@ -496,7 +513,7 @@ footer > .section-title {
   width: 525px;
   position: absolute;
   top: 180px;
-  left: -135px;
+  left: 0;
   background: no-repeat url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
 }
 
@@ -572,10 +589,13 @@ footer > .section-title {
 }
 
 .section-welcome {
-  position: relative;
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.section-welcome-container {
   padding-bottom: 100px;
+  position: relative;
 }
 
 .section-welcome__text-row {
@@ -617,7 +637,7 @@ footer > .section-title {
   z-index: -1;
 }
 
-.section-welcome::before {
+.section-welcome-container::before {
   content: "";
   position: absolute;
   right: 930px;
@@ -628,7 +648,7 @@ footer > .section-title {
   border-radius: 50%;
 }
 
-.section-welcome::after {
+.section-welcome-container::after {
   content: "";
   position: absolute;
   right: 60px;
@@ -659,9 +679,12 @@ footer > .section-title {
 
 .section-beer {
   background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"), url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"), url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-size: 40% 40%, 40% 40%, cover;
+  background-size: 45% 60%, 32% 45%, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left top, 1500px center, center;
+  background-position: left -150px, 135% 150px, center;
+}
+
+.section-beer__container {
   position: relative;
   padding-top: 60px;
   padding-bottom: 170px;
@@ -715,7 +738,7 @@ footer > .section-title {
   margin-top: 50px;
 }
 
-.section-beer::before {
+.section-beer__container::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -726,7 +749,7 @@ footer > .section-title {
   right: 530px;
 }
 
-.section-beer::after {
+.section-beer__container::after {
   content: "";
   width: 390px;
   height: 1px;
@@ -769,12 +792,15 @@ footer > .section-title {
 .section-appartments {
   background-color: #034574;
   background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"), url("/wp-content/themes/ratskeller-wp/img/hafen.png");
-  background-position: -255px -100px, 1400px center;
+  background-position: -255px -100px, 150% 80%;
   background-size: 40% 40%, 40% 40%;
   background-repeat: no-repeat, no-repeat;
-  position: relative;
   margin-top: 0;
   margin-bottom: 85px;
+}
+
+.section-appartments__container {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 65px;
 }

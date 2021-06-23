@@ -2,15 +2,18 @@
   background-color: $accentColor;
   background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"),
     url("/wp-content/themes/ratskeller-wp/img/hafen.png");
-  background-position: -255px -100px, 1400px center;
+  background-position: -255px -100px, 150% 80%;
   background-size: 40% 40%, 40% 40%;
   background-repeat: no-repeat, no-repeat;
-  position: relative;
 
   margin-top: 0;
   margin-bottom: 85px;
-  padding-top: 50px;
-  padding-bottom: 65px;
+
+  &__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
 
   &__text-wrapper {
     max-width: 700px;

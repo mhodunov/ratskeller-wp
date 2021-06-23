@@ -11,6 +11,7 @@ $image = $atts['image'];
 ?>
 
 <section class="section-welcome">
+	<div class="custom-container section-welcome-container">
 	<div class="section-welcome__text-row">
 		<h2 class="section-title"><?php echo $section_title ?></h2>
 		<div class="section-text"><?php echo $section_content ?></div>
@@ -22,5 +23,6 @@ $image = $atts['image'];
 			<p class="rotated-text section-welcome__additional-text"><?php echo $rotated_text ?></p>
 		</div>
 		<div class="section-welcome__decorative-line">
+		</div>
 		</div>
 </section>
