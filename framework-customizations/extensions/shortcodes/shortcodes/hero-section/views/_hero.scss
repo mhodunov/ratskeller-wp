@@ -104,9 +104,20 @@
       position: absolute;
       top: 83px;
       right: 25px;
-      height: 380px;
+      height: 395px;
 
       border-right: 1px solid $secondaryColor;
     }
   }
+}
+
+.section-hero__text::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: $secondaryColor;
+  position: absolute;
+  right: 65px;
+  bottom: 20px;
 }

@@ -21,4 +21,6 @@ $image = $atts['image'];
 		<div class="section-welcome__decorative-block">
 			<p class="rotated-text section-welcome__additional-text"><?php echo $rotated_text ?></p>
 		</div>
+		<div class="section-welcome__decorative-line">
+		</div>
 </section>

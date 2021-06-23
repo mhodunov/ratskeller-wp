@@ -25,4 +25,5 @@ $image_three = $atts['image_three'];
 		<div class="section-text"><?php echo $section_content ?></div>
 	</div>
 	<div class="section-beer__additional-text"><?php echo $section_additional_text ?></div>
+	<div class="section-beer__decoration"></div>
 </section>

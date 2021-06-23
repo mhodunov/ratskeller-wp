@@ -482,8 +482,19 @@ footer > .section-title {
   position: absolute;
   top: 83px;
   right: 25px;
-  height: 380px;
+  height: 395px;
   border-right: 1px solid #f0ecdf;
+}
+
+.section-hero__text::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #f0ecdf;
+  position: absolute;
+  right: 65px;
+  bottom: 20px;
 }
 
 .section-welcome {
@@ -530,6 +541,46 @@ footer > .section-title {
   width: 530px;
   height: 560px;
   z-index: -1;
+}
+
+.section-welcome::before {
+  content: "";
+  position: absolute;
+  right: 930px;
+  top: 70px;
+  width: 10px;
+  height: 10px;
+  background: #f0ecdf;
+  border-radius: 50%;
+}
+
+.section-welcome::after {
+  content: "";
+  position: absolute;
+  right: 60px;
+  top: 74px;
+  width: 870px;
+  border-top: 1px solid #f0ecdf;
+}
+
+.section-welcome__decorative-line {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+  height: 50px;
+  width: 1px;
+  background: #f0ecdf;
+}
+
+.section-welcome__decorative-line::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #f0ecdf;
+  border-radius: 50%;
 }
 
 .section-beer {
@@ -590,6 +641,57 @@ footer > .section-title {
   margin-top: 50px;
 }
 
+.section-beer::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #f0ecdf;
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
+  right: 530px;
+}
+
+.section-beer::after {
+  content: "";
+  width: 390px;
+  height: 1px;
+  background: #f0ecdf;
+  position: absolute;
+  top: 129px;
+  right: 530px;
+}
+
+.section-beer__decoration {
+  width: 10px;
+  height: 10px;
+  background: #f0ecdf;
+  position: absolute;
+  border-radius: 50%;
+  right: 790px;
+  bottom: 35px;
+}
+
+.section-beer__decoration::before {
+  content: "";
+  width: 420px;
+  height: 1px;
+  background: #f0ecdf;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.section-beer__decoration::after {
+  content: "";
+  width: 1px;
+  height: 240px;
+  background: #f0ecdf;
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+}
+
 .section-appartments {
   background-color: #034574;
   background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"), url("/wp-content/themes/ratskeller-wp/img/hafen.png");
@@ -620,6 +722,7 @@ footer > .section-title {
   width: 390px;
   right: 0;
   bottom: 60px;
+  z-index: 1;
 }
 
 .section-appartments__image-one {
@@ -638,5 +741,15 @@ footer > .section-title {
 .section-appartments__image-four {
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.section-appartments__decoration-line {
+  height: 600px;
+  width: 1px;
+  background-color: #f0ecdf;
+  position: absolute;
+  right: 190px;
+  bottom: -55px;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */

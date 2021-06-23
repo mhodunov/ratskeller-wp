@@ -34,4 +34,5 @@ $image_four = $atts['image_four'];
                         echo wp_get_attachment_image($image_four['attachment_id'], 'large-extra');
                     } ?></div>
     </div>
+    <div class="section-appartments__decoration-line"></div>
 </section>

@@ -30,6 +30,7 @@
 
     right: 0;
     bottom: 60px;
+    z-index: 1;
   }
 }
 
@@ -51,4 +52,14 @@
     margin-top: 20px;
     margin-bottom: 0;
   }
+}
+
+.section-appartments__decoration-line {
+  height: 600px;
+  width: 1px;
+  background-color: $secondaryColor;
+  position: absolute;
+  right: 190px;
+  bottom: -55px;
+  z-index: 0;
 }
