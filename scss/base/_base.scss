@@ -10,6 +10,7 @@ body {
   font-size: $mainTextSize;
   color: $primaryColor;
   overflow-x: hidden;
+  margin-bottom: 0;
 }
 
 p {
@@ -66,6 +67,22 @@ p {
 @media screen and (max-width: 576px) {
   .custom-container {
     max-width: 540px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .section-title {
+    font-size: $sectionHeaderSizeMobile;
+  }
+
+  .section-text {
+    font-size: $mainTextSizeMobile;
+  }
+
+  .rotated-text {
+    font-size: $rotatedTextSizeMobile;
   }
 }
 
@@ -94,7 +111,5 @@ p {
 @media screen and (min-width: 1650px) {
   .custom-container {
     max-width: 1650px !important;
-    margin-right: auto;
-    margin-left: auto;
   }
 }

@@ -38,7 +38,6 @@
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-
     z-index: 20;
   }
 
@@ -133,4 +132,57 @@
   position: absolute;
   right: 65px;
   bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .section-hero {
+    width: 100%;
+    height: 100vh;
+
+    &__image {
+      width: 100%;
+      height: 800px;
+      position: static;
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      z-index: 20;
+    }
+
+    &__texture-block {
+      display: none;
+    }
+
+    &__decoration {
+      right: 10px;
+      bottom: 50%;
+      &::before {
+        height: 365px;
+      }
+
+      &::after {
+        height: 400px;
+      }
+    }
+
+    &__blue-block {
+      display: none;
+    }
+
+    &__text {
+      max-width: 100%;
+      padding-right: 0px;
+
+      &--small {
+        font-size: 20px;
+      }
+
+      &--large {
+        font-size: 48px;
+      }
+    }
+  }
+  .section-hero__text::after {
+    right: 30px;
+  }
 }
