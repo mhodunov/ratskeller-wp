@@ -73,6 +73,7 @@ body {
   font-weight: 400;
   font-size: 21px;
   color: #5a5a5a;
+  overflow-x: hidden;
 }
 
 p {
