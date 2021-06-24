@@ -142,9 +142,13 @@ add_action( 'widgets_init', 'ratskeller_wp_widgets_init' );
 function ratskeller_wp_scripts() {
 	wp_enqueue_style( 'ratskeller-wp-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'ratskeller-wp-custom-style', get_template_directory_uri() . '/scss/main.css' );
+	wp_enqueue_style( 'swiper-slider', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	wp_style_add_data( 'ratskeller-wp-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'ratskeller-wp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'init-slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script('swiper-slider', 'https://unpkg.com/swiper/swiper-bundle.min.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

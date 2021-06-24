@@ -4,10 +4,19 @@
 
 $options = array(
 
-	'background_image' => array(
-		'type'  => 'upload',
-		'label' => __( 'Hero Image', 'Page Builder' ),
-		'desc'  => __( 'Either upload a new, or choose an existing image from your media library', 'fw' )
+  'slider'=> array(
+        'type'          => 'addable-popup',
+        'label'         => _x('Add Slider', 'Page Builder'),
+        'popup-title'   => null,
+        'size'          => 'large',
+        'template' => "<img src='{{=image['url']}}' height='100'>",
+        'popup-options' => array(
+            'image' => array(
+                'type'        => 'upload',
+                'label'       => _x('Choose or upload slider image', 'Page Builder'),
+                'images_only' => true,
+						),
+					),
 	),
 
 	'logo' => array(
