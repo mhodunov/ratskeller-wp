@@ -2,15 +2,11 @@ const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
+  allowTouchMove: false,
 
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
   },
 
   // Navigation arrows
