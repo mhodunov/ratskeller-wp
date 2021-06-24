@@ -141,14 +141,11 @@
   }
   .section-welcome-container {
     &::before {
-      right: 30px;
-      top: 90px;
+      display: none;
     }
 
     &::after {
-      right: 30px;
-      top: 94px;
-      width: 40px;
+      display: none;
     }
   }
 }

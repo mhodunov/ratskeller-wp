@@ -117,3 +117,78 @@
     left: 4px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .section-beer {
+    background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"),
+      url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+    background-size: 500px 300px, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 370px 50%, center;
+
+    &__container {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-left: 0;
+      padding-left: 10px;
+    }
+
+    &__additional-text {
+      font-size: $mainTextSizeMobile;
+
+      max-width: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+      padding-left: 10px;
+    }
+
+    &__image-one {
+      display: none;
+    }
+
+    &__image-two {
+      display: none;
+    }
+
+    &__image-three {
+      display: none;
+    }
+  }
+
+  .section-beer ul {
+    margin-top: 30px;
+  }
+
+  .section-beer__container::before {
+    top: 146px;
+    right: 30px;
+  }
+
+  .section-beer__container::after {
+    width: 300px;
+    top: 150px;
+    right: 30px;
+  }
+
+  .section-beer__decoration {
+    left: 10px;
+    bottom: 25px;
+
+    &::before {
+      width: 300px;
+      top: 4px;
+      left: 0;
+    }
+
+    &::after {
+      height: 150px;
+      bottom: 0;
+      left: 4px;
+    }
+  }
+}

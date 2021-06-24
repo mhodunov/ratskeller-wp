@@ -1,7 +1,3 @@
-a:visited {
-  color: inherit;
-}
-
 body {
   font-family: "Playfair Display", serif;
   font-style: normal;
@@ -10,7 +6,7 @@ body {
   font-size: $mainTextSize;
   color: $primaryColor;
   overflow-x: hidden;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 p {
@@ -111,5 +107,7 @@ p {
 @media screen and (min-width: 1650px) {
   .custom-container {
     max-width: 1650px !important;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

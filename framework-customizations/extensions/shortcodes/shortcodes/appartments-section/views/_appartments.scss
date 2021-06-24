@@ -66,3 +66,69 @@
   bottom: -55px;
   z-index: 0;
 }
+
+@media screen and (max-width: 576px) {
+  .section-appartments {
+    background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+    background-position: 400px 50px;
+    background-size: 400px;
+    margin-bottom: 50px;
+
+    &__container {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__text-wrapper {
+      max-width: 100%;
+      margin: 0 0;
+    }
+
+    &__left-images {
+      display: none;
+    }
+
+    &__right-images {
+      display: none;
+    }
+  }
+
+  .section-appartments__image {
+    &-one {
+      display: none;
+    }
+
+    &-two {
+      display: none;
+    }
+
+    &-three {
+      display: none;
+    }
+
+    &-four {
+      display: none;
+    }
+  }
+
+  .section-appartments__decoration-line {
+    height: 50px;
+    right: 50%;
+    bottom: 10px;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $secondaryColor;
+      position: absolute;
+      bottom: 0;
+      left: -4px;
+    }
+  }
+}

@@ -209,3 +209,93 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 576px) {
+  footer .section-title {
+    padding-left: 10px;
+  }
+
+  footer {
+    background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-position: 50% bottom;
+  }
+
+  .footer {
+    &__content {
+      display: block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__contacts-container {
+      padding-left: 10px;
+
+      font-size: $mainTextSizeMobile;
+    }
+
+    &__contacts-item {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__map {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      padding-right: 20px;
+      width: 100%;
+    }
+  }
+
+  .footer__absolute {
+    text-align: center;
+
+    &-logo {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-hours {
+      font-size: 20px;
+    }
+  }
+
+  .footer__bird {
+    width: 40%;
+    top: 250px;
+  }
+
+  .footer-decoration {
+    height: 1px;
+    width: 280px;
+
+    top: 115px;
+    left: 30px;
+
+    &::before {
+      left: -5px;
+      bottom: -4px;
+    }
+  }
+
+  .footer__absolute .custom-container {
+    display: block;
+  }
+
+  .footer__link {
+    font-size: 24px;
+  }
+
+  .footer__absolute-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}

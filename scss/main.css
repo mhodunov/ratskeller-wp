@@ -76,10 +76,6 @@
   font-style: normal;
 }
 
-a:visited {
-  color: inherit;
-}
-
 body {
   font-family: "Playfair Display", serif;
   font-style: normal;
@@ -87,7 +83,7 @@ body {
   font-size: 21px;
   color: #5a5a5a;
   overflow-x: hidden;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 p {
@@ -179,6 +175,8 @@ p {
 @media screen and (min-width: 1650px) {
   .custom-container {
     max-width: 1650px !important;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -260,6 +258,40 @@ p {
   right: 0;
   top: 0;
   z-index: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .site-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .site-branding {
+    min-width: 150px;
+  }
+  .main-navigation {
+    padding-left: 0px;
+  }
+  .header-contacts {
+    display: none;
+  }
+  .header-contacts > a {
+    display: none;
+  }
+  .header-blue-block {
+    display: none;
+  }
 }
 
 footer .section-title {
@@ -476,6 +508,78 @@ footer {
           align-items: center;
 }
 
+@media screen and (max-width: 576px) {
+  footer .section-title {
+    padding-left: 10px;
+  }
+  footer {
+    background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-position: 50% bottom;
+  }
+  .footer__content {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer__contacts-container {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .footer__contacts-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .footer__map {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .footer__text {
+    padding-right: 20px;
+    width: 100%;
+  }
+  .footer__absolute {
+    text-align: center;
+  }
+  .footer__absolute-logo {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__absolute-hours {
+    font-size: 20px;
+  }
+  .footer__bird {
+    width: 40%;
+    top: 250px;
+  }
+  .footer-decoration {
+    height: 1px;
+    width: 280px;
+    top: 115px;
+    left: 30px;
+  }
+  .footer-decoration::before {
+    left: -5px;
+    bottom: -4px;
+  }
+  .footer__absolute .custom-container {
+    display: block;
+  }
+  .footer__link {
+    font-size: 24px;
+  }
+  .footer__absolute-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .primary-button {
   border-color: #034574;
   color: #034574;
@@ -624,7 +728,7 @@ footer {
 @media screen and (max-width: 576px) {
   .section-hero {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   .section-hero__image {
     width: 100%;
@@ -639,7 +743,7 @@ footer {
     display: none;
   }
   .section-hero__decoration {
-    right: 10px;
+    right: 20px;
     bottom: 50%;
   }
   .section-hero__decoration::before {
@@ -662,7 +766,7 @@ footer {
     font-size: 48px;
   }
   .section-hero__text::after {
-    right: 30px;
+    right: 40px;
   }
 }
 
@@ -792,13 +896,10 @@ footer {
     display: none;
   }
   .section-welcome-container::before {
-    right: 30px;
-    top: 90px;
+    display: none;
   }
   .section-welcome-container::after {
-    right: 30px;
-    top: 94px;
-    width: 40px;
+    display: none;
   }
 }
 
@@ -914,6 +1015,67 @@ footer {
   left: 4px;
 }
 
+@media screen and (max-width: 576px) {
+  .section-beer {
+    background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"), url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+    background-size: 500px 300px, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 370px 50%, center;
+  }
+  .section-beer__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section-beer__text {
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .section-beer__additional-text {
+    font-size: 18px;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .section-beer__image-one {
+    display: none;
+  }
+  .section-beer__image-two {
+    display: none;
+  }
+  .section-beer__image-three {
+    display: none;
+  }
+  .section-beer ul {
+    margin-top: 30px;
+  }
+  .section-beer__container::before {
+    top: 146px;
+    right: 30px;
+  }
+  .section-beer__container::after {
+    width: 300px;
+    top: 150px;
+    right: 30px;
+  }
+  .section-beer__decoration {
+    left: 10px;
+    bottom: 25px;
+  }
+  .section-beer__decoration::before {
+    width: 300px;
+    top: 4px;
+    left: 0;
+  }
+  .section-beer__decoration::after {
+    height: 150px;
+    bottom: 0;
+    left: 4px;
+  }
+}
+
 .section-appartments {
   background-color: #034574;
   background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"), url("/wp-content/themes/ratskeller-wp/img/hafen.png");
@@ -976,5 +1138,59 @@ footer {
   right: 190px;
   bottom: -55px;
   z-index: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .section-appartments {
+    background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+    background-position: 400px 50px;
+    background-size: 400px;
+    margin-bottom: 50px;
+  }
+  .section-appartments__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-appartments__text-wrapper {
+    max-width: 100%;
+    margin: 0 0;
+  }
+  .section-appartments__left-images {
+    display: none;
+  }
+  .section-appartments__right-images {
+    display: none;
+  }
+  .section-appartments__image-one {
+    display: none;
+  }
+  .section-appartments__image-two {
+    display: none;
+  }
+  .section-appartments__image-three {
+    display: none;
+  }
+  .section-appartments__image-four {
+    display: none;
+  }
+  .section-appartments__decoration-line {
+    height: 50px;
+    right: 50%;
+    bottom: 10px;
+    z-index: 0;
+  }
+  .section-appartments__decoration-line::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f0ecdf;
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
