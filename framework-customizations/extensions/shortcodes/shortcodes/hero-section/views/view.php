@@ -9,8 +9,9 @@ $logo = $atts['logo'];
 ?>
 
 <section class="section-hero">
-		<div class="section-hero__texture-block"></div>
+		
 	<div class="custom-container section-hero-container">
+	<div class="section-hero__texture-block"></div>
 	<span class="section-hero__decoration"><svg class="swiper-next">
 		<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#arrow-circle"></use>
 	</svg></span>

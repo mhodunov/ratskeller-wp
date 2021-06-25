@@ -13,6 +13,7 @@
 
 	<footer id="colophon" class="site-footer fw-container">
 		<div class="footer__container custom-container">
+			<div class="footer__container__texture-block"></div>
 		<h2 class="section-title">Kontakt & Anfahrt</h2>
 		<div class="footer-decoration"></div>
 		<div class="footer__content">

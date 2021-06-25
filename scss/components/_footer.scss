@@ -3,14 +3,22 @@ footer .section-title {
 }
 
 footer {
-  background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-repeat: no-repeat;
-  background-size: 1225px 615px;
-  background-position: 105% 190%;
 }
 
 .footer__container {
   position: relative;
+  &__texture-block {
+    position: absolute;
+    width: 1225px;
+    height: 380px;
+    bottom: 0;
+    right: -135px;
+    background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 }
 
 .footer {
@@ -223,6 +231,9 @@ footer {
   }
 
   .footer {
+    &__container__texture-block {
+      display: none;
+    }
     &__content {
       display: block;
       padding-top: 50px;

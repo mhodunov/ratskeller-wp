@@ -1,15 +1,37 @@
 .section-beer {
-  background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"),
-    url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"),
-    url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-size: 45% 60%, 32% 45%, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left -150px, 135% 150px, center;
+  background-image: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 
   &__container {
     position: relative;
     padding-top: 60px;
     padding-bottom: 170px;
+
+    &__decor-left {
+      position: absolute;
+      top: -50px;
+      left: -135px;
+      width: 850px;
+      height: 430px;
+      background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png");
+      background-position: center -10%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &__decor-right {
+      position: absolute;
+      height: 440px;
+      width: 850px;
+      background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      bottom: 35%;
+      right: -750px;
+    }
   }
 
   &__text {
@@ -130,6 +152,14 @@
       position: relative;
       padding-top: 50px;
       padding-bottom: 50px;
+
+      &__decor-right {
+        display: none;
+      }
+
+      &__decor-left {
+        display: none;
+      }
     }
 
     &__text {

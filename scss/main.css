@@ -329,15 +329,21 @@ footer .section-title {
   padding-left: 45px;
 }
 
-footer {
-  background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-repeat: no-repeat;
-  background-size: 1225px 615px;
-  background-position: 105% 190%;
-}
-
 .footer__container {
   position: relative;
+}
+
+.footer__container__texture-block {
+  position: absolute;
+  width: 1225px;
+  height: 380px;
+  bottom: 0;
+  right: -135px;
+  background: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 .footer__content {
@@ -549,6 +555,9 @@ footer {
     background-size: 100% 700px;
     background-position: 50% bottom;
   }
+  .footer__container__texture-block {
+    display: none;
+  }
   .footer__content {
     display: block;
     padding-top: 50px;
@@ -687,7 +696,7 @@ footer {
   width: 525px;
   position: absolute;
   top: 180px;
-  left: 0;
+  left: -135px;
   background: no-repeat url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
 }
 
@@ -941,16 +950,41 @@ footer {
 }
 
 .section-beer {
-  background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"), url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png"), url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
-  background-size: 45% 60%, 32% 45%, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left -150px, 135% 150px, center;
+  background-image: url("/wp-content/themes/ratskeller-wp/img/Blatttextur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
 .section-beer__container {
   position: relative;
   padding-top: 60px;
   padding-bottom: 170px;
+}
+
+.section-beer__container__decor-left {
+  position: absolute;
+  top: -50px;
+  left: -135px;
+  width: 850px;
+  height: 430px;
+  background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png");
+  background-position: center -10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-beer__container__decor-right {
+  position: absolute;
+  height: 440px;
+  width: 850px;
+  background-image: url("/wp-content/themes/ratskeller-wp/img/Braumaschine.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 35%;
+  right: -750px;
 }
 
 .section-beer__text {
@@ -1064,6 +1098,12 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .section-beer__container__decor-right {
+    display: none;
+  }
+  .section-beer__container__decor-left {
+    display: none;
+  }
   .section-beer__text {
     max-width: 100%;
     margin-left: 0;
@@ -1115,10 +1155,6 @@ footer {
 
 .section-appartments {
   background-color: #034574;
-  background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png"), url("/wp-content/themes/ratskeller-wp/img/hafen.png");
-  background-position: -255px -100px, 150% 80%;
-  background-size: 40% 40%, 40% 40%;
-  background-repeat: no-repeat, no-repeat;
   margin-top: 0;
   margin-bottom: 85px;
 }
@@ -1127,6 +1163,30 @@ footer {
   position: relative;
   padding-top: 50px;
   padding-bottom: 65px;
+}
+
+.section-appartments__container__decor-right {
+  background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 274px;
+  width: 600px;
+  bottom: 65px;
+  right: -300px;
+}
+
+.section-appartments__container__decor-left {
+  background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 274px;
+  width: 600px;
+  top: -100px;
+  left: -210px;
 }
 
 .section-appartments__text-wrapper {
@@ -1180,6 +1240,7 @@ footer {
 @media screen and (max-width: 576px) {
   .section-appartments {
     background-image: url("/wp-content/themes/ratskeller-wp/img/hafen.png");
+    background-repeat: no-repeat;
     background-position: 310px 0;
     background-size: 400px;
     margin-bottom: 50px;
@@ -1190,6 +1251,9 @@ footer {
     padding-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .section-appartments__container__decor-right, .section-appartments__container__decor-left {
+    display: none;
   }
   .section-appartments__text-wrapper {
     max-width: 100%;
