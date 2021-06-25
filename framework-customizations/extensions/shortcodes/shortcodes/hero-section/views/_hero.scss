@@ -12,6 +12,17 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+
+  @extend %HoverAnimation;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    border-radius: 50%;
+    border: 1px solid $secondaryColor;
+
+    @extend %HoverAnimation;
+  }
 }
 
 .section-hero {
@@ -98,6 +109,18 @@
     right: 45px;
     bottom: 445px;
     z-index: 30;
+    width: 50px;
+    height: 50px;
+
+    @extend %HoverAnimation;
+
+    &:hover,
+    &:focus {
+      background-color: $secondaryColor;
+      border-radius: 50%;
+
+      @extend %HoverAnimation;
+    }
 
     &::before {
       content: "";
@@ -185,7 +208,7 @@
     }
   }
   .section-hero__text::after {
-    right: 35px;
+    right: 25px;
   }
 
   .swiper-next {

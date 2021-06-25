@@ -24,7 +24,7 @@
 							<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#location"></use>
 						</svg>
 					</span>
-					<?php echo fw_get_db_settings_option('address') ?>
+					<a href="#"><?php echo fw_get_db_settings_option('address') ?></a>
 				</li>
 				<li class="footer__contacts-item"><span class="footer__icon email-icon">
 											<svg class="email-icon">
@@ -35,7 +35,7 @@
 					<svg class="user-icon">
 							<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#user-circle"></use>
 						</svg>
-				</span><?php echo fw_get_db_settings_option('facebook_person') ?></li>
+				</span><a href="#"><?php echo fw_get_db_settings_option('facebook_person') ?></a></li>
 				<li class="footer__contacts-item"><span class="footer__icon">
 					<svg class="phone-icon">
 							<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#phone-circle"></use>

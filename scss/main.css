@@ -16,7 +16,7 @@
   border: 2px solid;
 }
 
-.main-navigation a, .main-navigation a:hover, .main-navigation a:focus, .header-contacts > a, .header-contacts > a:hover, .header-contacts > a:focus, .footer__link, .footer__link:hover, .footer__link:focus, .footer__contacts-item a, .footer__contacts-item a:hover, .footer__contacts-item a:focus, .primary-button, .primary-button:hover, .primary-button:focus, .secondary-button, .secondary-button:hover, .secondary-button:focus {
+.main-navigation a, .main-navigation a:hover, .main-navigation a:focus, .header-contacts > a, .header-contacts > a:hover, .header-contacts > a:focus, .footer__link, .footer__link:hover, .footer__link:focus, .footer__contacts-item a, .footer__contacts-item a:hover, .footer__contacts-item a:focus, .primary-button, .primary-button:hover, .primary-button:focus, .secondary-button, .secondary-button:hover, .secondary-button:focus, .swiper-next, .swiper-next:hover, .swiper-next:focus, .section-hero__decoration, .section-hero__decoration:hover, .section-hero__decoration:focus {
   -webkit-transition: all linear 300ms;
   transition: all linear 300ms;
 }
@@ -181,8 +181,6 @@ p {
 }
 
 .site-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -204,21 +202,24 @@ p {
 }
 
 .main-navigation {
-  padding-left: 170px;
+  padding-left: 140px;
+  padding-right: 0px;
 }
 
 .main-navigation a {
   font-size: 20px;
   text-decoration: none;
   color: #5a5a5a;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 21px;
+  padding-left: 21px;
 }
 
 .main-navigation a:hover, .main-navigation a:focus {
-  color: #034574;
-}
-
-#primary-menu > li {
-  padding-right: 30px;
+  color: #f0ecdf;
+  background: #034574;
 }
 
 .header-contacts {
@@ -609,7 +610,7 @@ footer .section-title {
     display: block;
   }
   .footer__link {
-    font-size: 24px;
+    font-size: 20px;
   }
   .footer__absolute-nav {
     display: -webkit-box;
@@ -654,6 +655,12 @@ footer .section-title {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+.swiper-next:hover, .swiper-next:focus {
+  fill: #034574;
+  border-radius: 50%;
+  border: 1px solid #f0ecdf;
 }
 
 .section-hero {
@@ -730,6 +737,13 @@ footer .section-title {
   right: 45px;
   bottom: 445px;
   z-index: 30;
+  width: 50px;
+  height: 50px;
+}
+
+.section-hero__decoration:hover, .section-hero__decoration:focus {
+  background-color: #f0ecdf;
+  border-radius: 50%;
 }
 
 .section-hero__decoration::before {
@@ -808,7 +822,7 @@ footer .section-title {
     font-size: 48px;
   }
   .section-hero__text::after {
-    right: 35px;
+    right: 25px;
   }
   .swiper-next {
     width: 40px;

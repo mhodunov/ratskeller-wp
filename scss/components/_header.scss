@@ -1,6 +1,4 @@
 .site-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -17,26 +15,29 @@
 }
 
 .main-navigation {
-  padding-left: 170px;
+  padding-left: 140px;
+  padding-right: 0px;
 }
 
 .main-navigation a {
   font-size: 20px;
   text-decoration: none;
   color: $primaryColor;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 21px;
+  padding-left: 21px;
 
   @extend %HoverAnimation;
 
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: $secondaryColor;
+    background: $accentColor;
 
     @extend %HoverAnimation;
   }
-}
-
-#primary-menu > li {
-  padding-right: 30px;
 }
 
 .header-contacts {
