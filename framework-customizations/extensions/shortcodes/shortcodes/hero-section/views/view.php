@@ -11,8 +11,8 @@ $logo = $atts['logo'];
 <section class="section-hero">
 		
 	<div class="custom-container section-hero-container">
-	<div class="section-hero__texture-block"></div>
-	<span class="section-hero__decoration"><svg class="swiper-next">
+	<div class="section-hero__texture-block" data-aos="fade-left" data-aos-duration="2000"></div>
+	<span class="section-hero__decoration" data-aos="fade-right" data-aos-duration="2000"><svg class="swiper-next">
 		<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#arrow-circle"></use>
 	</svg></span>
 	<div class="section-hero__image">
@@ -33,9 +33,9 @@ $logo = $atts['logo'];
 		</div>
 			</div>
 	</div>
-	<div class="section-hero__blue-block"></div>
+	<div class="section-hero__blue-block" data-aos="fade-right" data-aos-duration="2000"></div>
 
-	<div class="section-hero__text">
+	<div class="section-hero__text" data-aos="fade-right" data-aos-duration="2000">
 		<span class="section-hero__text--small white-text"><? echo $small_text ?></span>
 		<span class="section-hero__text--large white-text"><? echo $large_text ?></span>
 	</div>

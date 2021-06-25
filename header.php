@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ratskeller-wp' ); ?></a>
 
 	<header id="masthead" class="site-header custom-container">
-		<div class="header-blue-block"></div>
+		<div class="header-blue-block" data-aos="fade-right" data-aos-duration="2000"></div>
 		<div class="header-container">
 			<div class="site-branding">
 				<?php

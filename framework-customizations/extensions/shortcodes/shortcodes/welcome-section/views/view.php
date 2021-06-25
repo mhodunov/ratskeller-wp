@@ -12,17 +12,17 @@ $image = $atts['image'];
 
 <section class="section-welcome">
 	<div class="custom-container section-welcome-container">
-	<div class="section-welcome__text-row">
+	<div class="section-welcome__text-row" data-aos="fade-up" data-aos-duration="2000">
 		<h2 class="section-title"><?php echo $section_title ?></h2>
 		<div class="section-text"><?php echo $section_content ?></div>
 		<a href="<?php echo $button_url ?>" class="primary-button"><?php echo $button_text ?></a>
 	</div>
-		<img src="/wp-content/themes/ratskeller-wp/img/Bierglas.png" alt="ratskeller beer bird" class="section-welcome__bird">
-		<img src="<?php echo $image['url'] ?>" alt="<?php echo $section_title ?>" class="section-welcome__image">
-		<div class="section-welcome__decorative-block">
+		<img src="/wp-content/themes/ratskeller-wp/img/Bierglas.png" alt="ratskeller beer bird" class="section-welcome__bird" data-aos="fade-left" data-aos-duration="2000">
+		<img src="<?php echo $image['url'] ?>" alt="<?php echo $section_title ?>" class="section-welcome__image" data-aos="fade-up-left" data-aos-duration="2000">
+		<div class="section-welcome__decorative-block" data-aos="zoom-in-up" data-aos-duration="2000">
 			<p class="rotated-text section-welcome__additional-text"><?php echo $rotated_text ?></p>
 		</div>
-		<div class="section-welcome__decorative-line">
+		<div class="section-welcome__decorative-line" data-aos="fade-up" data-aos-duration="2000">
 		</div>
 		</div>
 </section>

@@ -14,3 +14,5 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-next',
   },
 });
+
+AOS.init();
