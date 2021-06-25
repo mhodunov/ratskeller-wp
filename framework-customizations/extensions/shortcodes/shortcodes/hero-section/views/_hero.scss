@@ -141,7 +141,7 @@
 
     &__image {
       width: 100%;
-      height: 800px;
+      height: 450px;
       position: static;
       background-size: cover, cover;
       background-position: center, center;
@@ -157,11 +157,13 @@
       right: 20px;
       bottom: 50%;
       &::before {
-        height: 365px;
+        height: 190px;
+        right: 20px;
       }
 
       &::after {
-        height: 400px;
+        height: 215px;
+        right: 20px;
       }
     }
 
@@ -183,6 +185,11 @@
     }
   }
   .section-hero__text::after {
-    right: 40px;
+    right: 35px;
+  }
+
+  .swiper-next {
+    width: 40px;
+    height: 40px;
   }
 }
