@@ -48,7 +48,11 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ratskeller-wp' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<svg class="menu-icon">
+						<use href="/wp-content/themes/ratskeller-wp/img/sprite.svg#menu"></use>
+					</svg>
+				</button>
 				<?php
 				wp_nav_menu(
 					array(
