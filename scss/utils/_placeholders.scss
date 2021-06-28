@@ -18,7 +18,8 @@
 }
 
 %HoverAnimation {
-  transition: all linear 300ms;
+  transition: background-color linear 0.15s, border-color linear 0.15s,
+    color linear 0.15s;
 }
 
 @media screen and (max-width: 576px) {

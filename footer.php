@@ -13,11 +13,11 @@
 
 	<footer id="colophon" class="site-footer fw-container">
 		<div class="footer__container custom-container">
-			<div class="footer__container__texture-block" data-aos="fade-left" data-aos-duration="2000"></div>
-		<h2 class="section-title" data-aos="fade-left" data-aos-duration="2000">Kontakt & Anfahrt</h2>
-		<div class="footer-decoration" data-aos="fade-left" data-aos-duration="2000"></div>
+			<div class="footer__container__texture-block" data-aos="fade-left" data-aos-duration="500"></div>
+		<h2 class="section-title" data-aos="fade-left" data-aos-duration="500">Kontakt & Anfahrt</h2>
+		<div class="footer-decoration" data-aos="fade-left" data-aos-duration="500"></div>
 		<div class="footer__content">
-			<ul class="footer__contacts-container" data-aos="fade-left" data-aos-duration="2000">
+			<ul class="footer__contacts-container" data-aos="fade-left" data-aos-duration="500">
 				<li class="footer__contacts-item">
 					<span class="footer__icon icon-blue-bg">
 						<svg class="map-icon">
@@ -47,11 +47,11 @@
 						</svg>
 				</span><a href="<?php echo fw_get_db_settings_option('facebook') ?>">Ratskeller auf Facebook</a></li>
 			</ul>
-			<div class="footer__map" data-aos="fade-up" data-aos-duration="2000">
+			<div class="footer__map" data-aos="fade-up" data-aos-duration="500">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.4584952423043!2d12.687202715813408!3d53.513867980014396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47abf8dc094c4b4b%3A0x2121a1731fb64d03!2sRatskeller%20Waren!5e0!3m2!1sru!2sua!4v1624348644857!5m2!1sru!2sua" width="740" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
-			<img src="/wp-content/themes/ratskeller-wp/img/Steuerrad.png" alt="ratskeller bird" class="footer__bird" data-aos="fade-right" data-aos-duration="2000">
-			<div class="footer__text" data-aos="fade-right" data-aos-duration="2000">
+			<img src="/wp-content/themes/ratskeller-wp/img/Steuerrad.png" alt="ratskeller bird" class="footer__bird" data-aos="fade-right" data-aos-duration="500">
+			<div class="footer__text" data-aos="fade-right" data-aos-duration="500">
 				<p class="footer__text--bold">Anfahrtshinweise für unsere Appartement-Gäste</p>
 				<p class="footer__text--normal">Nutzen Sie bitte den Parkplatz mit der Adresse XYZ, Waren (Müritz)</p>
 			</div>

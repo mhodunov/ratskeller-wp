@@ -17,8 +17,8 @@
 }
 
 .main-navigation a, .main-navigation a:hover, .main-navigation a:focus, .header-contacts > a, .header-contacts > a:hover, .header-contacts > a:focus, .footer__link, .footer__link:hover, .footer__link:focus, .footer__contacts-item a, .footer__contacts-item a:hover, .footer__contacts-item a:focus, .primary-button, .primary-button:hover, .primary-button:focus, .secondary-button, .secondary-button:hover, .secondary-button:focus, .swiper-next, .swiper-next:hover, .swiper-next:focus, .section-hero__decoration, .section-hero__decoration:hover, .section-hero__decoration:focus {
-  -webkit-transition: all linear 300ms;
-  transition: all linear 300ms;
+  -webkit-transition: background-color linear 0.15s, border-color linear 0.15s, color linear 0.15s;
+  transition: background-color linear 0.15s, border-color linear 0.15s, color linear 0.15s;
 }
 
 @media screen and (max-width: 576px) {
